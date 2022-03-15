@@ -1,9 +1,9 @@
 # SYNTAX
-1. using echo to print out statements
+1. using echo to print out statements  
 `<?php
     echo "Hello, World!\n";
-?>`
-**output will be Hello, World!**
+?>`  
+**output will be Hello, World!**  
 
 # alternatively, you can use print
 `<?php
