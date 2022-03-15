@@ -45,7 +45,10 @@
 echo "My name is Jerry"`<br/>
 **The end symbol `?>` is missing**
 
-4. You can also use `print` function instead of `echo` function in PHP. **TRUE**
+4. You can also use `print` function instead of `echo` function in PHP. **TRUE**<br/><br/><br/>
 
 
 # Challenge: Displaying Output
+- Print this string using echo:
+- > My name is Bond, James Bond!
+`echo "My name is Bond, James Bond!";`
