@@ -50,5 +50,5 @@ echo "My name is Jerry"`<br/>
 
 # Challenge: Displaying Output
 - Print this string using echo:
-- > My name is Bond, James Bond!
+> My name is Bond, James Bond!
 `echo "My name is Bond, James Bond!";`
