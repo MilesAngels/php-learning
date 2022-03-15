@@ -3,8 +3,8 @@
 - You can declare a variable in PHP using the `$` sign followed by the variable name.
     - Example: `$name`
 
-> `<?php
-$str = "I will be back by";
+`<?php
+ $str = "I will be back by";
 $num = 5;
   
 echo $str;
