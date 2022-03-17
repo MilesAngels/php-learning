@@ -25,7 +25,7 @@
  | * | Multiplication | \$a * \$b |
  | / | Division | \$a / \$b |
  | % | Modulus | \$a % \$b |
-<br/><br/><br/>
+
 
 ### Unary Operators
 - Unary operators are the type of arithmetic operators that perform arithmetic on only one value.
@@ -84,3 +84,11 @@
 ### Basic Operators
  | Operator | Name | Example |
  |---|---|---|
+ | == | Equal | `a==b` |
+ | === | Identical | `a===b` |
+ | != | Not Equal | `a!=b` |
+ | !== | Not Identical | `a!==b` |
+ | < | Less than | `a<b` |
+ | > | Greater than | `a>b` |
+ | <= | Less than equal to | `a<=b` |
+ | >= | Greater than equal to | `a>=b` |
