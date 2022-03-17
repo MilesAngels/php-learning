@@ -69,7 +69,7 @@
 
 #### Right Associativity
 - Right associativity occurs when an expression is evaluated from right to left. Like most programming languages, = and print in PHP have right associativity.
-    - Example:
+    - Example:<br/>
         `<?php` <br/>
             `echo "5 - 3 + 2 = " . (5 - 3 + 2); // 5-3+2 is treated as (5-3)+2`<br/>
             `echo "\n";`<br/>
@@ -92,6 +92,7 @@
  | > | Greater than | `a>b` |
  | <= | Less than equal to | `a<=b` |
  | >= | Greater than equal to | `a>=b` |
+
 
 > Note: For basic equality testing, the equal operator `==` is used. For more comprehensive checks, use the identical operator `===`.
 
@@ -142,7 +143,6 @@
 - There are two logical operators:
     - `&&` or and
     - `||` or or
-<br/>
 
 #### The AND Operator
 - The `and` or `&&` operator returns `true` if all the statements are `true` and `false` if one or more statements are `false`. Say we have two statements `a` and `b`. The following table illustrates this behavior.
@@ -166,12 +166,12 @@
 #### The OR operator
 - The `or` operator returns `true` if one or more of the conditional statements are `true` and `false` if all the conditions are `false`. The following table illustrates this behavior.
 
- | a | b | `a||b` or `a or b` |
+ | a | b | `a||b` or `a and b` |
  |---|---|---|
  | true | true | true |
  | true | false | true |
  | false | true | true |
- | false | false | false |
+ | false | false | false | 
 
 - Example: <br/>
     `<?php`<br/>
