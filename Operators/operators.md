@@ -93,6 +93,7 @@
  | <= | Less than equal to | `a<=b` |
  | >= | Greater than equal to | `a>=b` |
 
+<br/>
 > Note: For basic equality testing, the equal operator `==` is used. For more comprehensive checks, use the identical operator `===`.
 
 - Example:<br/>
