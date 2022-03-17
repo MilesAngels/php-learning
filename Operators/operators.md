@@ -19,7 +19,6 @@
 - Binary operators are the ones that take two values and perform an arithmetic operation on them. They are listed below:
 <br/>
  | Operator |    Function    | Example   |
- 
  |----------|----------------|-----------|
  |     +    |    Addition    | \$a + \$b |
  |     -    |   Subtraction  | \$a - \$b |
