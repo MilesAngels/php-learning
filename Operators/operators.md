@@ -18,8 +18,8 @@
 ### Binary Operators
 - Binary operators are the ones that take two values and perform an arithmetic operation on them. They are listed below:
 <br/>
-| Operator | Function       | Example   |<br/>
-|----------|----------------|-----------|<br/>
+| Operator |    Function    | Example   |<br/>
+|:--------:|:--------------:|:---------:|<br/>
 |     +    |    Addition    | \$a + \$b |<br/>
 |     -    |   Subtraction  | \$a - \$b |<br/>
 |     *    | Multiplication | \$a * \$b |<br/>
