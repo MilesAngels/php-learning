@@ -29,13 +29,12 @@
 
 ### Unary Operators
 - Unary operators are the type of arithmetic operators that perform arithmetic on only one value.
-<br/>
 
 #### There are two types of unary operators
 - Incrementing operator: `++`
 - Decrementing operator: `--`
 - They can either precede or succeed variables, resulting in different executions of the code. An example of this is shown below:
-    - Example: 
+    - Example: <br/> 
         `<?php`<br/>
             `$i = 1;`
             `echo $i . "\n"; // Prints 1`<br/>
@@ -190,5 +189,6 @@
         `if ($x > $y || $x > $z) echo "x is either greater than y or z";`<br/>
     `?>`<br/><br/>
 
-> Note: The && and || operators have higher precedence than and and or respectively. See table below: <br/>
+> Note: The `&&` and `||` operators have higher precedence than and and or respectively.<br/>
 > Since the precedence of `or` and `and` is lower, the `=` operator is executed first.
+
