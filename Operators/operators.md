@@ -155,13 +155,13 @@
  | false | false | false |
 
 - Example: <br/> 
-    `<?php`
-        `$x = 5;`
-        `$y = 4;`
-        `$z = 2;`
-        `if ($x > $y && $x > $z) echo "x is greater than y and z\n";`
-        `if ($z < $y and $z < $x) echo "z is smaller than y and z\n";`
-    `?>`
+    `<?php`<br/>
+        `$x = 5;`<br/>
+        `$y = 4;`<br/>
+        `$z = 2;`<br/>
+        `if ($x > $y && $x > $z) echo "x is greater than y and z\n";`<br/>
+        `if ($z < $y and $z < $x) echo "z is smaller than y and z\n";`<br/>
+    `?>`<br/>
 
 #### The OR operator
 - The `or` operator returns `true` if one or more of the conditional statements are `true` and `false` if all the conditions are `false`. The following table illustrates this behavior.
@@ -182,7 +182,7 @@
         `echo ($x || $y);`<br/>
     `?>`<br/><br/>
 
-    <br/>
+- Example: <br/>
     `<?php`<br/>
         `$x = 5;`<br/>
         `$y = 6;`<br/>
@@ -190,5 +190,5 @@
         `if ($x > $y || $x > $z) echo "x is either greater than y or z";`<br/>
     `?>`<br/><br/>
 
-> Note: The && and || operators have higher precedence than and and or respectively. See table below:
+> Note: The && and || operators have higher precedence than and and or respectively. See table below: <br/>
 > Since the precedence of `or` and `and` is lower, the `=` operator is executed first.
