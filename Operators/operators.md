@@ -205,7 +205,7 @@
 
 #### Combined Assignment
 - The combined assignment operators are a shortcut for an operation on some variable and subsequently assigning this new value to that variable.
-    - Example:
+    - Example:<br/>
         `<?php`<br/>
             `$a = 1; // basic assignment`<br/>
             `echo ($a += 2) . "\n"; // read as '$a = $a + 2'; $a now is (1 + 2) => 3`<br/>
