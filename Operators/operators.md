@@ -1,4 +1,4 @@
-# Operators <br/>
+# Operators 
 ## What are operators?
 - An operator is something that takes one or more values (or expressions, in programming jargon) and yields another value (so that the construction itself becomes an expression). 
 <br/>
@@ -8,7 +8,7 @@
 - comparison operators
 - logical operators
 - assignment operators
-<br/><br/>
+<br/>
 
 ## Arithmetic Operators
 - Used to perform basic arithmetic and are divided into two categories:
@@ -60,11 +60,11 @@
 #### Left Associativity
 - Left associativity occurs when an expression is evaluated from left to right. For example * and / have the same precedence and their associativity is left to right, so the expression
 
-> 100 / 10 * 10 
+    > 100 / 10 * 10 
 
 - is treated as:
 
-> (100 / 10) * 10
+    > (100 / 10) * 10
 
 #### Right Associativity
 - Right associativity occurs when an expression is evaluated from right to left. Like most programming languages, = and print in PHP have right associativity.
