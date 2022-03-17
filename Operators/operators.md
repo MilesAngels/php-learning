@@ -164,7 +164,7 @@
     `?>`
 
 #### The OR operator
-- The `or` operator returns `true` if one or more of the conditional statements are `true` and `false` if all the conditions are `false`. The following table illustrates this behavior.
+- The `or` operator returns `true` if one or more of the conditional statements are `true` and `false` if all the conditions are `false`. The following table illustrates this behavior.<br/>
 
  | a | b | `a||b` or `a and b` |
  |---|---|---|
