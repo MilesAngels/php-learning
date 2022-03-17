@@ -192,3 +192,35 @@
 > Note: The `&&` and `||` operators have higher precedence than and and or respectively.<br/>
 > Since the precedence of `or` and `and` is lower, the `=` operator is executed first.
 
+### Assignment Operators
+- The result of an assignment expression is the value being assigned. Note that a single equal sign = is NOT for comparison!
+- Example:<br/>
+    `<?php`<br/>
+        `$a = 3;`<br/>
+        `echo "\$a = " . $a; //prints $a = 3`<br/>
+        `$b = ($a = 5); //assigns 5 to $a and then assigns the value of $a to $b`<br/>
+        `echo "\n\$a = " . $a; //prints $a = 5`<br/>
+        `echo "\n\$b = " . $b; //prints $b = 5`<br/>
+    `?>`<br/><br/>
+
+#### Combined Assignment
+- The combined assignment operators are a shortcut for an operation on some variable and subsequently assigning this new value to that variable.
+    - Example:
+        `<?php`<br/>
+            `$a = 1; // basic assignment`<br/>
+            `echo ($a += 2) . "\n"; // read as '$a = $a + 2'; $a now is (1 + 2) => 3`<br/>
+            `echo ($a -= 1) . "\n"; // $a now is (3 - 1) => 2`<br/>
+            `echo ($a *= 2) . "\n"; // $a now is (2 * 2) => 4`<br/>
+            `echo ($a /= 2) . "\n"; // $a now is (4 / 2) => 2`<br/>
+            `echo ($a %= 5) . "\n"; // $a now is (2 % 5) => 2 (modulus or remainder)`<br/>
+        `?>`<br/><br/>
+#### Other Combined Assigment Operators
+- You can also calculate the power of a number using the combined assignment operator.
+    - Example:<br/>
+        `<?php`<br/>
+            `$a = 2;`<br/>
+            `$b = 4;`<br/>
+            `echo $a**=$b; // $a now is (2^4) => 16 (2 raised to the power of 4)`<br/>
+            `echo "\n";`<br/>
+            `echo $b**=3; // $b now is (4^3) => 64 (4 raised to the power of 3)`<br/>
+        `?>`<br/>
