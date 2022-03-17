@@ -166,7 +166,7 @@
 #### The OR operator
 - The `or` operator returns `true` if one or more of the conditional statements are `true` and `false` if all the conditions are `false`. The following table illustrates this behavior.
 
- | a | b | `a&&b` or `a and b` |
+ | a | b | `a&#124;b` or `a and b` |
  |---|---|---|
  | true | true | true |
  | true | false | false |
