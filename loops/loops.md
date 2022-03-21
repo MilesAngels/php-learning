@@ -26,8 +26,8 @@
     `?>`<br/><br/>
 
 >**Infinite Loops**
-> - if the while loop's conditional statement looked like this instead: 
-> `while ( $y <= 10 ) { //since y is not being changed inside the while loop you will get stuck `
->       `$x += 1;        // in an infinte loop as the condiiton will always be met` 
->  `}`
->   `$y += $x;`
+> - if the while loop's conditional statement looked like this instead: <br/>
+> `while ( $y <= 10 ) { //since y is not being changed inside the while loop you will get stuck `<br/>
+>       `$x += 1;        // in an infinte loop as the condiiton will always be met` <br/>
+>  `}`<br/>
+>   `$y += $x;`<br/><br/>
