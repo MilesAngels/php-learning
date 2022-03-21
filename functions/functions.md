@@ -33,4 +33,58 @@
 &emsp;`}`<br/>
 &emsp;`//calling function and passing arguments to it`<br/>
 &emsp;`myFunction(3, 4);`<br/>
-`?>`<br/>
+`?>`<br/><br/>
+
+>- PHP allows us to pass arguments into a function in two ways:
+>    - Pass by Value
+>    - Pass by Reference
+
+### Pass by Value
+- On passing arguments using pass by value, the value of the argument gets changed within a function, but the original value outside the function remains unchanged. 
+- That means a duplicate of the original value is passed as an argument.(Shallow copy)
+
+- Example: Cube of a Number <br/>
+`<?php`<br/>
+&emsp;`function cube($num1)`<br/>
+&emsp;`{ //num1 parameter passed by value here`<br/>
+&emsp;&emsp;`return $num1 * $num1 * $num1; //cube of num1 returned`  <br/>
+&emsp;`}`<br/>
+&emsp;`$answer = cube(3); //function cube called with 3 passed as the argument`<br/>
+&emsp;`echo $answer;`<br/>
+`?>`<br/><br/>
+
+- Example: Swap Numbers<br/>
+`<?php`<br/>
+&emsp;`function swap($arg1, $arg2)`<br/>
+&emsp;`{ //parameters num1 and num2 passed using pass by value method`<br/>
+&emsp;&emsp;`$temp = $arg2; //creating a variable temp and setting equal to arg2`<br/>
+&emsp;&emsp;`$arg2 = $arg1; //setting the value of arg2 equal to arg1`<br/>
+&emsp;&emsp;`$arg1 = $temp; //setting the value of arg1 equal to temp which is equal to arg2`<br/>
+&emsp;`}`<br/>
+&emsp;`$num1 = 4;`<br/>
+&emsp;`$num2 = 5;`<br/>
+&emsp;`// Have a careful look at this function call`<br/>
+&emsp;`swap($num1, $num2);`<br/>
+&emsp;`echo "num1 is: $num1\n";`<br/>
+&emsp;`echo "num2 is: $num2";`<br/>
+`?>`<br/><br/>
+
+### Pass by Reference
+- When passing arguments by pass by reference, the original value is passed. Therefore, the original value gets altered. 
+- In pass by reference, we actually pass the value using ampersand sign `&`. **The additional `&` is very important: it tells the compiler that the data is a reference to the value rather than simply the value itself.**
+
+- Example: Swap Numbers<br/>
+`<?php`<br/>
+&emsp;`function swap(&$arg1, &$arg2)`<br/>
+&emsp;`{ //parameters num1 and num2 passed using pass by value method`<br/>
+&emsp;&emsp;`$temp = $arg2; //creating a variable temp and setting equal to arg2`<br/>
+&emsp;&emsp;`$arg2 = $arg1; //setting the value of arg2 equal to arg1`<br/>
+&emsp;&emsp;`$arg1 = $temp; //setting the value of arg1 equal to temp which is equal to arg2`<br/>
+&emsp;`}`<br/>
+&emsp;`$num1 = 4;`<br/>
+&emsp;`$num2 = 5;`<br/>
+&emsp;`// Have a careful look at this function call`<br/>
+&emsp;`swap($num1, $num2);`<br/>
+&emsp;`echo "num1 is: $num1\n";`<br/>
+&emsp;`echo "num2 is: $num2";`<br/>
+`?>`<br/><br/>
