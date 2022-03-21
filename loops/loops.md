@@ -54,6 +54,41 @@
 ## For Loop
 - A for loop can also be used for doing things a certain amount of time. It’s like a while loop but the increment is included with the condition.
 - Syntax:<br/>
-     for (<mark style="background-color: #FFF000">initialization</mark>; condition; change) { <br/>
+     for (initialization; condition; change) { <br/>
         statement / code block; <br/>
-    }<br/>
+    }<br/><br/>
+- Example: <br/>
+    `<?php`<br/>
+        `for ($i = 0;$i < 10;$i++)`<br/>
+        `{`<br/>
+            `echo "value of i is: $i\n";`<br/>
+        `}`<br/>
+    `?>`<br/><br/>
+- Other ways to write a for loop
+    - Example 1:<br/>
+        `<?php`<br/>
+           ` $i = 0;`<br/>
+            `for (;$i < 10;$i++)`<br/>
+            `{ //initialization can also be done outside loop`<br/>
+                `echo "value of i is: $i\n";`<br/>
+            `}`<br/>
+        `?>`<br/>
+    - Example 2: <br/>
+        `<?php`<br/>
+            `$i = 0;`<br/>
+            `for (;$i < 10;)`<br/>
+            `{ //initialization can also be done outside loop. Note the semicolon is compulsory`<br/>
+                `echo "value of i is: $i \n";`<br/>
+                `$i++; //the increment of loop control variable can also be done separately` <br/>  
+            `}`<br/>
+        `?>`<br/><br/>
+
+> **Nested For Loops**
+> - It is possible to nest for loops. Nesting means including one for loop in another​ for loop.
+> - The syntax for a nested for loop is as follows:
+> `for (expression for initialization ; expression for testing ; expression for updating ) {`<br/>
+>    `for (expression for initialization ; expression for testing ; expression for updating) {`<br/>
+>        `//body`<br/>
+>    `}`<br/>
+>    `//body`<br/>
+>  `}`<br/> 
