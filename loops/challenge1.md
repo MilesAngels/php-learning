@@ -6,8 +6,8 @@
     - Your code should return the string ans with all the values computed from multiplication appended in that string.
 
 >`<?php`<br/>	
->>`$num = 5;`
->>`$i = 10; // end of loop flag`
+>>`$num = 5;`<br/>
+>>`$i = 10; // end of loop flag`<br/>
 >	`$k=1; // start of loop `
 >	`$ans = ""; //total` 
 >	`while($i>0)`
