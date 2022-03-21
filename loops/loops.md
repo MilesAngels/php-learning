@@ -85,10 +85,28 @@
 
 > **Nested For Loops**
 > - It is possible to nest for loops. Nesting means including one for loop in another​ for loop.
-> - The syntax for a nested for loop is as follows:
+> - The syntax for a nested for loop is as follows:<br/>
 > `for (expression for initialization ; expression for testing ; expression for updating ) {`<br/>
 >    `for (expression for initialization ; expression for testing ; expression for updating) {`<br/>
 >        `//body`<br/>
 >    `}`<br/>
 >    `//body`<br/>
 >  `}`<br/> 
+
+## Foreach Loop
+- The `foreach` statement is similar to the `for` statement in that both allow code to iterate over the items of collections, but the `foreach` statement lacks an iteration index, so it works even with collections that lack indices altogether.
+- Syntax: <br/>
+    `foreach(x as y) {`<br/>
+        `statement;`<br/>
+    `}`<br/><br/>
+- Example: <br/>
+    `<?php`<br/> 
+    `$itemsToWrite = array('Alpha', 'Bravo', 'Charlie'); //an array of strings `<br/>
+    `foreach($itemsToWrite as $item){ //iterating through each element of array itemsToWrite`<br/>
+        `echo "$item\n"; //displaying each element of array in console`<br/>
+    `}`<br/>
+    `?>`<br/><br/>
+
+## Infinite Loops
+- An infinite loop refers to a loop, which under certain valid (or at least plausible) input, will never exit.  
+ 
