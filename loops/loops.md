@@ -79,7 +79,7 @@
             `for (;$i < 10;)`<br/>
             `{ //initialization can also be done outside loop. Note the semicolon is compulsory`<br/>
                 `echo "value of i is: $i \n";`<br/>
-                `$i++; //the increment of loop control variable can also be done separately` <br/>  
+                `$i++; //the increment of loop control variable can also be done separately`<br/>  
             `}`<br/>
         `?>`<br/><br/>
 
