@@ -11,11 +11,11 @@
 - These functions can be written such that they would perform the required task wherever necessary once they’re called.
 - Custom functions
 - Example: <br/>
-> `<?php`
-> `&emsp;function exampleFunc() //function that outputs some text`
-> &emsp;{
-> &emsp;&emsp;echo "This is a user-defined function";
-> &emsp;}
-> &emsp;// Calling the function
-> &emsp;exampleFunc();
-> ?>
+`<?php`<br/>
+&emsp;`function exampleFunc() //function that outputs some text`<br/>
+&emsp;`{`<br/>
+&emsp;&emsp;`echo "This is a user-defined function";`<br/>
+&emsp;`}`<br/>
+&emsp;`// Calling the function`<br/>
+&emsp;`exampleFunc();`<br/>
+`?>`<br/><br/>
