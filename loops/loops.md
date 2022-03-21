@@ -54,6 +54,6 @@
 ## For Loop
 - A for loop can also be used for doing things a certain amount of time. It’s like a while loop but the increment is included with the condition.
 - Syntax:<br/>
-     for (<mark style="background-color: yellow">initialization</mark>; condition; change) { <br/>
+     for (<mark style="background-color: #FFF000">initialization</mark>; condition; change) { <br/>
         statement / code block; <br/>
     }<br/>
