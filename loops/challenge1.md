@@ -12,11 +12,11 @@
 >>`$ans = ""; //total` <br/>
 >>`while($i>0) //while i is greater than 0 then keep going`<br/>
 >>`{`<br/>
->>>`$answer = $num*$k; `<br/>
->>>`echo "$num x $k  = $answer\n";`<br/>
->>>`//strval() is a function that returns the string value of a variable`<br/>
->>>`$ans .=  strval($answer)." ";`<br/>
->>>`$k++;`<br/>
->>>`$i--;`<br/>
->`}`<br/>
+>>` $answer = $num*$k; `<br/>
+>>` echo "$num x $k  = $answer\n";`<br/>
+>>` //strval() is a function that returns the string value of a variable`<br/>
+>>` $ans .=  strval($answer)." ";`<br/>
+>>` $k++;`<br/>
+>>` $i--;`<br/>
+>>`}`<br/>
 >`?>`<br/>
