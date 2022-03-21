@@ -6,17 +6,17 @@
     - Your code should return the string ans with all the values computed from multiplication appended in that string.
 
 >`<?php`<br/>	
->>`$num = 5;`<br/>
->>`$i = 10; // end of loop flag`<br/>
->>`$k=1; // start of loop `<br/>
->>`$ans = ""; //total` <br/>
->>`while($i>0) //while i is greater than 0 then keep going`<br/>
->>`{`<br/>
->>`     $answer = $num*$k; `<br/>
->>`     echo "$num x $k  = $answer\n";`<br/>
->>`     //strval() is a function that returns the string value of a variable`<br/>
->>`     $ans .=  strval($answer)." ";`<br/>
->>`     $k++;`<br/>
->>`     $i--;`<br/>
->>`}`<br/>
+>&nbsp;`$num = 5;`<br/>
+>&nbsp;`$i = 10; // end of loop flag`<br/>
+>&nbsp;`$k=1; // start of loop `<br/>
+>&nbsp;`$ans = ""; //total` <br/>
+>&nbsp;`while($i>0) //while i is greater than 0 then keep going`<br/>
+>&nbsp;`{`<br/>
+>&nbsp;&nbsp;` $answer = $num*$k; `<br/>
+>&nbsp;&nbsp;` echo "$num x $k  = $answer\n";`<br/>
+>&nbsp;&nbsp;` //strval() is a function that returns the string value of a variable`<br/>
+>&nbsp;&nbsp;` $ans .=  strval($answer)." ";`<br/>
+>&nbsp;&nbsp;` $k++;`<br/>
+>&nbsp;&nbsp;` $i--;`<br/>
+>&nbsp;`}`<br/>
 >`?>`<br/>
