@@ -6,7 +6,7 @@
         - Here’s a link showing how you can add values to a string.
 
 >`<?php`<br/>
->&#09;`$range = 6; //this will be the range of the fibonacci sequence`<br/>
+>&emsp;`$range = 6; //this will be the range of the fibonacci sequence`<br/>
 >&#09;`//$ans = ""; //this will be the output`<br/>
 >&#09;`$num1 = 0; // 1st value in the fibonacci sequence`<br/>
 >&#09;`$num2 = 1; //2nd value in the fibonacci sequence`<br/>
