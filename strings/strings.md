@@ -15,4 +15,11 @@
 &emsp;`$name = 'Joel';`<br/>
 &emsp;`// Example using the curly brace syntax for the variable $name`<br/>
 &emsp;`echo "We need more {$name}s to help us!\n";`<br/>
-`?>`<br/>
+`?>`<br/><br/>
+> You will get an error if you add an s to a variable that isn't in curly syntax
+> Variable name: $name
+> This will give you an error: $names
+> This is completely okay: {$name}s
+<br/>
+
+> ***Make sure that you do not forget the `$` when trying to interpolate variables with a string.***
