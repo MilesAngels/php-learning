@@ -89,3 +89,22 @@
 &emsp;`echo "num2 is: $num2";`<br/>
 `?>`<br/><br/>
 > This example works because we referenced the variables that we passed into the function which made it possible to change the original value of both variables.
+
+## Variable Scope 
+- The scope of a variable refers to the variables's visibility, i.e., which part of the program can access that variable.
+- Types of Variables
+    - local variables
+    - global variables
+
+### Local Variables
+- Variables that are defiened within a function. (local scope)
+- These variables cannot be accessed outside of the function they are declared in.
+- Example: <br/>
+    `<?php`
+    &emsp;`function foo()`
+    &emsp;`{`
+    &emsp;&emsp;`$number = 10;`
+    &emsp;&emsp;`echo $number;`
+    &emsp;`}`
+    &emsp;`foo(); //Will print 10 because text defined inside function is a local variable`
+    `?>`
