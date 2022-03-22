@@ -104,4 +104,36 @@
 &emsp;`echo str_replace("facts", "truth", $my_str);`<br/>
 `?>`<br/><br/>
 
-- You can pass a fourth argument to the str_replace() function to know how many times the string replacements were performed, like so:
+- You can pass a fourth argument to the `str_replace()` function to know how many times the string replacements were performed, like so:
+`<?php`<br/>
+&emsp;`$my_str = 'If the facts do not fit the theory, change the facts.';`<br/>
+&emsp;`// Perform string replacement`<br/>
+&emsp;`str_replace("facts", "truth", $my_str, $count);`<br/>
+&emsp;`// Display number of replacements performed`<br/>
+&emsp;`echo "The text was replaced $count times.";`<br/>
+`?>`<br/><br/>
+
+### Calculating the Length of a String
+- The `strlen()` function is used to calculate the number of characters inside a string. It also includes the blank spaces inside the string.
+- Example:<br/>
+`<?php`<br/>
+&emsp;`$my_str = 'Welcome to Educative!';`<br/>
+&emsp;`echo strlen($my_str);`<br/>
+`?>`<br/><br/>
+
+### Counting the Number of Words in a String
+- The `str_word_count()` function counts the number of words in a string.
+- Example:<br/>
+`<?php`<br/>
+&emsp;`$my_str = 'The quick brown fox jumps over the lazy dog.';`<br/>
+&emsp;`echo str_word_count($my_str);`<br/>
+`?>`<br/><br/>
+
+### Reversing a String
+- The `strrev()` function in PHP can be used to reverse a string.
+- Example:<br/>
+`<?php`<br/>
+&emsp;`$my_str = 'You can do anything, but not everything.';`<br/>
+&emsp;`// Display reversed string`<br/>
+&emsp;`echo strrev($my_str);`<br/>
+`?>`<br/><br/>
