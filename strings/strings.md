@@ -47,3 +47,19 @@
 &emsp;`$a .= "b"; // $a => "ab"`<br/>
 &emsp;`echo $a;`<br/>
 `?>`<br/><br/>
+
+## Built-in Functions
+### Extracting or Replacing Substrings
+- Single characters can be extracted using array (square brace) syntax as well as curly brace syntax. This will only return a single character.
+- If we need more than one character, we have to use the in-built `substr` function.
+- Example: <br/>
+`<?php`
+&emsp;`$foo = 'Hello world';`
+&emsp;`echo $foo[6]; // returns 'w'//extracting a single character`
+&emsp;`echo "\n";`
+&emsp;`echo $foo{6}; // also returns 'w'`
+&emsp;`echo "\n";`
+&emsp;`echo substr($foo, 6, 1); // also returns 'w'`
+&emsp;`echo "\n";`
+&emsp;`echo substr($foo, 6, 2); // returns 'wo'//extracting multiple characters`
+`?>`
