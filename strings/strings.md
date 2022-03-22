@@ -53,13 +53,22 @@
 - Single characters can be extracted using array (square brace) syntax as well as curly brace syntax. This will only return a single character.
 - If we need more than one character, we have to use the in-built `substr` function.
 - Example: <br/>
-`<?php`
-&emsp;`$foo = 'Hello world';`
-&emsp;`echo $foo[6]; // returns 'w'//extracting a single character`
-&emsp;`echo "\n";`
-&emsp;`echo $foo{6}; // also returns 'w'`
-&emsp;`echo "\n";`
-&emsp;`echo substr($foo, 6, 1); // also returns 'w'`
-&emsp;`echo "\n";`
-&emsp;`echo substr($foo, 6, 2); // returns 'wo'//extracting multiple characters`
-`?>`
+`<?php`<br/>
+&emsp;`$foo = 'Hello world';`<br/>
+&emsp;`echo $foo[6]; // returns 'w'//extracting a single character`<br/>
+&emsp;`echo "\n";`<br/>
+&emsp;`echo $foo{6}; // also returns 'w'`<br/>
+&emsp;`echo "\n";`<br/>
+&emsp;`echo substr($foo, 6, 1); // also returns 'w'`<br/>
+&emsp;`echo "\n";`<br/>
+&emsp;`echo substr($foo, 6, 2); // returns 'wo'//extracting multiple characters`<br/>
+`?>`<br/><br/>
+
+### Finding Position of a Substring
+- In PHP you can use the `strpos` method to get the position/occurrence of a substring in another string.
+- If the substring does not exist, the `strpos` returns `false`.
+- Example: <br/>
+`<?php`<br/>
+&emsp;`echo "The occurence of hay is at position: ".strpos("haystack", "hay")."\n"; // int(0)`<br/>
+&emsp;`echo "The occurence of stack is at position: ".strpos("haystack", "stack")."\n"; // int(3)`<br/>
+`?>`<br/><br/>
