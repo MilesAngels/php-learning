@@ -95,3 +95,11 @@
 `?>`<br/><br/>
 
 > Note: The `substr_replace` function does not change the actual string. It just returns the new string that would’ve been made after doing the replacement under discussion.
+
+- You can do this using the `str_replace()` method which essentially replaces all occurrences of the search text within the target string.
+    - Example: <br/>
+`<?php`<br/>
+&emsp;`$my_str = 'If the facts do not fit the theory, change the facts.';`<br/>
+&emsp;`// replaces "facts" with "truth" and displays new string`<br/>
+&emsp;`echo str_replace("facts", "truth", $my_str);`<br/>
+`?>`<br/><br/>
