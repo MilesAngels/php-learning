@@ -103,3 +103,5 @@
 &emsp;`// replaces "facts" with "truth" and displays new string`<br/>
 &emsp;`echo str_replace("facts", "truth", $my_str);`<br/>
 `?>`<br/><br/>
+
+- You can pass a fourth argument to the str_replace() function to know how many times the string replacements were performed, like so:
