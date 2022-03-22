@@ -20,3 +20,14 @@
 `?>`<br/><br/>
 
 > `echo` won't be great for trying to output an array.
+<br/>
+
+## Length of an Array
+- The total number of elements in an array is called the length of an array.
+- This length is dynamic which means that we may add or remove items from the array.
+- We can check for the length of an array by using `count($arrayName)`
+- Example: <br/>
+`<?php`<br/>
+&emsp;`$fruits = array("Type"=>"Citrus",1=>"Orange",2=>"Grapefruit",3=>"Lemon");//initializing associative array`<br/>
+&emsp;`echo "Length of \$fruits is ".count($fruits);`<br/>
+`?>`<br/><br/>
