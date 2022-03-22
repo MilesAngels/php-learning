@@ -140,3 +140,35 @@
 > &emsp;`$funcName = 'sum'; //we set the variable funcName to sum which means that the function named sum will equal to the newly declared variable`<br/>
 > &emsp;`echo $funcName(2, 4); // outputs 6;`<br/>
 > `?>`<br/>
+
+*Challenge 1 and Challenge 2*
+
+## Recursion
+- Recursion is a method of function calling in which a function calls itself during execution.
+- A recursive function must comprise of at least one base case i.e. a condition for termination of execution.
+- The function keeps on converging to the defined base case as it continuously calls itself.
+- Example: <br/>
+`<?php`<br/>
+&emsp;`function factorial($n)`<br/>
+&emsp;`{`<br/>
+&emsp;&emsp;`if ($n == 1 || $n == 0)`<br/>
+&emsp;&emsp;`{ //base case`<br/>
+&emsp;&emsp;&emsp;`return 1;`<br/>
+&emsp;&emsp;`}`<br/>
+&emsp;&emsp;`else`<br/>
+&emsp;&emsp;`{`<br/>
+&emsp;&emsp;&emsp;`return $n * factorial($n - 1); //function calls itself`<br/>  
+&emsp;&emsp;`}`<br/>
+&emsp;`}`<br/>
+&emsp;`echo factorial(4); //calling the function with 4 as the argument`<br/>
+`?>`<br/><br/>
+
+> *Factorial* of n (n!) is the product of every number from 1 to n. 
+> Formula: n! = n * (n - 1);
+<br/>
+
+### Recursion versus Iteration
+- **Iteration** is a sequence of steps that are executed repeatedly until a certain condition is met.
+- **Recursion** is a method of function calling in which a function calls itself during execution.
+
+*Challenge 3*
