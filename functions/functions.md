@@ -97,14 +97,35 @@
     - global variables
 
 ### Local Variables
-- Variables that are defiened within a function. (local scope)
+- Variables that are defined within a function. (local scope)
 - These variables cannot be accessed outside of the function they are declared in.
 - Example: <br/>
-    `<?php`
-    &emsp;`function foo()`
-    &emsp;`{`
-    &emsp;&emsp;`$number = 10;`
-    &emsp;&emsp;`echo $number;`
-    &emsp;`}`
-    &emsp;`foo(); //Will print 10 because text defined inside function is a local variable`
-    `?>`
+    `<?php`<br/>
+    &emsp;`function foo()`<br/>
+    &emsp;`{`<br/>
+    &emsp;&emsp;`$number = 10;`<br/>
+    &emsp;&emsp;`echo $number;`<br/>
+    &emsp;`}`<br/>
+    &emsp;`foo(); //Will print 10 because text defined inside function is a local variable`<br/>
+    `?>`<br/><br/>
+
+### Global Variable
+- Variables that are defined outside of a function.
+- Accessible to any part of the program
+- To modify a global variable within a function, we need to use the keyword global followed by the name of the variable. 
+    - Example:<br/>
+    `<?php`<br/>
+    &emsp;`$num1 = 5;`<br/>
+    &emsp;`$num2 = 2;`<br/>
+    &emsp;`function multiply(){`<br/>
+    &emsp;&emsp;`global $num1; // Accessing global variables from function scope requires this explicit statement`<br/>
+    &emsp;&emsp;`global $num2;`<br/>
+    &emsp;&emsp;`$answer = $num1*$num2;`<br/>
+    &emsp;&emsp;`return $answer;`<br/>
+    &emsp;`}`<br/>
+    &emsp;`// When in the global scope, regular global variables can be used`<br/>
+    &emsp;`// without explicitly stating 'global $variable;'`<br/>
+    &emsp;`echo "num1 is: $num1\n";`<br/>
+    &emsp;`echo "num2 is: $num2\n";`<br/>
+    &emsp;`echo multiply();`<br/>
+    `?>`<br/><br/>
