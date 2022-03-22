@@ -33,3 +33,4 @@
 `?>`<br/><br/>
 
 # Multidimensional Arrays
+- These arrays contain items that can be a single value or an array itself. 
