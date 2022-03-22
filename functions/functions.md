@@ -129,3 +129,14 @@
     &emsp;`echo "num2 is: $num2\n";`<br/>
     &emsp;`echo multiply();`<br/>
     `?>`<br/><br/>
+
+> *Using Variable Variables for Function Calls*
+> - Example: <br/>
+> `<?php`<br/>
+> &emsp;`function sum($x, $y)`<br/>
+> &emsp;`{`<br/>
+> &emsp;&emsp;`return $x + $y;`<br/>
+> &emsp;`}`<br/>
+> &emsp;`$funcName = 'sum'; //we set the variable funcName to sum which means that the function named sum will equal to the newly declared variable`<br/>
+> &emsp;`echo $funcName(2, 4); // outputs 6;`<br/>
+> `?>`<br/>
