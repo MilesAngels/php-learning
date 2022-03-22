@@ -93,3 +93,5 @@
  &emsp;`echo $bar;`<br/>
  &emsp;`echo "\n";`<br/>
 `?>`<br/><br/>
+
+> Note: The `substr_replace` function does not change the actual string. It just returns the new string that would’ve been made after doing the replacement under discussion.
