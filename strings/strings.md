@@ -7,7 +7,7 @@
 &emsp;`echo "Hello $name, Nice to see you."; // $name will be replaced with "Joel"`<br/>
 `?>`<br/><br/>
 
-## Curly Syntax (or complex syntax)
+### Curly Syntax (or complex syntax)
 -  It requires that you wrap your variable within curly braces `{}`.
 - This can be useful when embedding variables within the text and helps prevent possible ambiguity between text and variables.
 - Example: <br/>
@@ -23,3 +23,27 @@
 <br/>
 
 > ***Make sure that you do not forget the `$` when trying to interpolate variables with a string.***
+
+## String Operators
+- There are only two string operators:
+    - Concatenation (`.`)
+    - Concatenation Assignment(`.=`)
+
+### Concatenation
+- The most important operation in strings is concatenation. It means joining one string to another.
+- Example: <br/>
+`<?php`<br/>
+&emsp;`$a = "water";`<br/>
+&emsp;`$b = "bottle";`<br/>
+&emsp;`$c = $a . $b; // $c => "ab"`<br/>
+&emsp;`echo $c;`<br/>
+`?>`<br/><br/>
+
+### Concatenation Assignment
+- Concatenation assignment is a slight variation of concatenation where you concatenate (add) one string at the end of another without the need for a third destination string.
+- Example: <br/>
+`<?php`<br/>
+&emsp;`$a = "a";`<br/>
+&emsp;`$a .= "b"; // $a => "ab"`<br/>
+&emsp;`echo $a;`<br/>
+`?>`<br/><br/>
