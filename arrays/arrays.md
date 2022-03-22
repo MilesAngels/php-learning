@@ -10,3 +10,13 @@
 &emsp;`$fruits = array("Type"=>"Citrus",1=>"Orange",2=>"Grapefruit",3=>"Lemon");//initializing associative array`<br/>
 &emsp;`print_r($fruits);`<br/>
 `?>`<br/><br/>
+
+- To print a very detailed array, we can use `var_dump()`
+    - This will print out keys, their associated values' data type (and length in parenthesis) and the value itself. 
+    - Example: <br/>
+`<?php`<br/>
+&emsp;`$fruits = array("Type"=>"Citrus",1=>"Orange",2=>"Grapefruit",3=>"Lemon");//initializing associative array`<br/>
+&emsp;`var_dump($fruits);`<br/>
+`?>`<br/><br/>
+
+> `echo` won't be great for trying to output an array.
