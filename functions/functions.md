@@ -88,3 +88,4 @@
 &emsp;`echo "num1 is: $num1\n";`<br/>
 &emsp;`echo "num2 is: $num2";`<br/>
 `?>`<br/><br/>
+> This example works because we referenced the variables that we passed into the function which made it possible to change the original value of both variables.
