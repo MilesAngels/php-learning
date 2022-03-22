@@ -72,3 +72,24 @@
 &emsp;`echo "The occurence of hay is at position: ".strpos("haystack", "hay")."\n"; // int(0)`<br/>
 &emsp;`echo "The occurence of stack is at position: ".strpos("haystack", "stack")."\n"; // int(3)`<br/>
 `?>`<br/><br/>
+
+### Replacing Characters in a String
+- Strings can also be changed one character at a time using the same square brace and curly brace syntax.
+- Replacing more than one character requires a function, `substr_replace`.
+- Example:<br/>
+`<?php`<br/>
+ &emsp;`$foo = 'hello world';`<br/>
+ &emsp;`$foo[6] = 'W'; // capitalizes the 'w' in 'hello world'`<br/>
+ &emsp;`echo $foo;`<br/>
+ &emsp;`echo "\n";`<br/>
+ &emsp;`$foo{0} = 'H'; // capitalizes the 'h' in 'hello world'`<br/>
+ &emsp;`echo $foo;`<br/>
+ &emsp;`echo "\n";`<br/>
+ &emsp;`$bar = substr_replace($foo, '!', 11, 1); // results in $bar = 'Hello World!'`<br/>
+ &emsp;`echo $bar;`<br/>
+ &emsp;`echo "\n";`<br/>
+ &emsp;`$bar = substr_replace($foo, 'Whi', 6, 2); // results in 'Hello Whirld'`<br/>
+ &emsp;`// Note that the replacement string need not be the same length as the substring replaced`<br/>
+ &emsp;`echo $bar;`<br/>
+ &emsp;`echo "\n";`<br/>
+`?>`<br/><br/>
