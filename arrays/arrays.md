@@ -220,11 +220,23 @@
 # Sorting Arrays
 ## Sorting Indexed Arrays
 ### By Value
-- We can sort arrays by utilizing the built-in function in ascending order.
+- We can sort arrays by utilizing the built-in function `sort()` in ascending order.
 - The associated keys will not be preserved during this.
     - Example:<br/>
 `<?php`<br/> 
 &emsp;`$fruits = ['Rasberry', 'Orange', 'Apricot','Banana', 'Apple','Olive' ]; //defining and array`<br/>
 &emsp;`sort($fruits); //applying the sort function`<br/>
 &emsp;`print_r($fruits); //printing the sorted array`<br/>
-`?>`<br/><br/>     
+`?>`<br/><br/>   
+
+## Sorting Associative Arrays
+### By Value
+- We can sort associative arrays by value using the built-in function asort(). This will sort the array in ascending order.
+- asort() sorts the a associative array on values.
+- Keys with each value will be preserved.
+    - Example:<br/>
+`<?php`<br/> 
+&emsp;`$fruits = [1=>'Rasberry',2=> 'Orange',3=> 'Apricot',4=>'Banana', 5=>'Apple',6=>'Olive' ]; //defining and array`<br/>
+&emsp;`asort($fruits); //applying the sort function`<br/>
+&emsp;`print_r($fruits); //printing the sorted array`<br/>
+`?>`  <br/>   
