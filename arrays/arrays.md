@@ -36,4 +36,17 @@
 <br/>
 
 # Multidimensional Arrays
-- These arrays contain items that can be a single value or an array itself. 
+- These arrays contain items that can be a single value or an array itself.
+- No limits to the dimensions of a multidemensional array. 
+- Array or arrays
+
+## Declaring Multidimensional Arrays
+- 2D array declaration:<br/>
+    > $arrayName = array(array(), array()....)
+
+- Arrays are resized dynamically and any attempt to write anything to a non-existent element creates it and creates an entire array if needed. 
+    - Example: <br/>
+`<?php`<br/>
+&emsp;`$check=array("elephant", array("honey", "sad", 5));`<br/> 
+&emsp;`print_r($check);`<br/>
+`?>`<br/>
