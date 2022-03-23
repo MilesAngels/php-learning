@@ -184,3 +184,22 @@
     - If a new key is used to assign a value, a new key will be created in the array.
 <br/>
 
+- Example: <br/>
+`<?php`<br/>
+&emsp;`$arr=array(1,3,5,7,9);`<br/>
+&emsp;`$arr[23]=71; // adding a new key and its assocaited value`<br/>
+&emsp;`print_r($arr);`<br/>
+&emsp;`$arr[2]=22; // replacing an old value at 2nd index`<br/>
+&emsp;`print_r($arr);`<br/>
+`?>`<br/><br/>
+
+# Removing Elements from Arrays
+## Removing Elements from Indexed Arrays
+- The PHP built-in function `unset()` is used to remove an element from an array.
+    - By specifying an array element as an input parameter for `unset()` will remove that element from an indexed array.
+    - Example: <br/>
+`<?php`<br/>
+&emsp;`$fruit = array("bananas", "apples", "peaches");`<br/>
+&emsp;`unset($fruit[1]);`<br/>
+&emsp;`print_r($fruit);`<br/>
+`?>` <br/><br/>   
