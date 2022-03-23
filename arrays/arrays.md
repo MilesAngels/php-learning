@@ -161,4 +161,17 @@
 &emsp;`$myArray = array(1, 2, 3);`<br/>
 &emsp;`array_unshift($myArray, 4,5);`<br/>
 &emsp;`print_r($myArray)`<br/>
-`?>`
+`?>`<br/><br/>
+
+## Adding Elements at the End
+- You can add an element at the end of an array without modifying any of the current elements within the array by using `array_push()`
+    - It pushed one or more element at the end of an array. 
+### Using array_push()
+- It has 2 or more parameters: the first parameter is the name of an array, and the other parameters are the elements to be added at the end of that array.
+    - Example: <br/>
+`<?php`<br/>
+&emsp;`$array = [1,2,3];`<br/>
+&emsp;`print_r($array);`<br/>
+&emsp;`array_push($array, 5, 6); // Pushing 5 and 6 at the end of $array`<br/>
+&emsp;`print_r($array); `<br/>
+`?>` <br/><br/>  
