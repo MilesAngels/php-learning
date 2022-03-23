@@ -51,7 +51,7 @@
 &emsp;`print_r($check);`<br/>
 `?>`<br/>
 
-> **Output**
+> **Output**<br/>
 > `Array`<br/>
 > `(`<br/>
 > &emsp;`[0] => elephant`<br/>
