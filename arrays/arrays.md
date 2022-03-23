@@ -219,3 +219,12 @@
 
 # Sorting Arrays
 ## Sorting Indexed Arrays
+### By Value
+- We can sort arrays by utilizing the built-in function in ascending order.
+- The associated keys will not be preserved during this.
+    - Example:<br/>
+`<?php`<br/> 
+&emsp;`$fruits = ['Rasberry', 'Orange', 'Apricot','Banana', 'Apple','Olive' ]; //defining and array`<br/>
+&emsp;`sort($fruits); //applying the sort function`<br/>
+&emsp;`print_r($fruits); //printing the sorted array`<br/>
+`?>`<br/><br/>     
