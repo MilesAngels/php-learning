@@ -62,3 +62,25 @@
 > &emsp;&emsp;&emsp;`[2] => 5`<br/>
 > &emsp;&emsp;`)`<br/>
 > `)`<br/>
+
+- Array that have arrays in every indices.<br/> 
+`<?php`<br/>
+&emsp;`$comparisonAdjectives = array(`<br/>
+&emsp;&emsp;    `array(`<br/>
+&emsp;&emsp;&emsp;        `"good",`<br/>
+&emsp;&emsp;&emsp;        `"better",`<br/>
+&emsp;&emsp;&emsp;        `"best"`<br/>
+&emsp;&emsp;    `) ,`<br/>
+&emsp;&emsp;    `array(`<br/>
+&emsp;&emsp;&emsp;        `"bad",`<br/>
+&emsp;&emsp;&emsp;        `"worse",`<br/>
+&emsp;&emsp;&emsp;        `"worst"`<br/>
+&emsp;&emsp;    `) ,`<br/>
+&emsp;&emsp;    `array(`<br/>
+&emsp;&emsp;&emsp;        `"tall",`<br/>
+&emsp;&emsp;&emsp;        `"taller",`<br/>
+&emsp;&emsp;&emsp;        `"tallest"`<br/>
+&emsp;&emsp;    `)`<br/>
+&emsp;`);`<br/>
+&emsp;`print_r($comparisonAdjectives);`<br/>
+`?>`<br/><br/>   
