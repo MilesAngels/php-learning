@@ -83,4 +83,27 @@
 &emsp;&emsp;    `)`<br/>
 &emsp;`);`<br/>
 &emsp;`print_r($comparisonAdjectives);`<br/>
-`?>`<br/><br/>   
+`?>`<br/><br/> 
+
+> **Output**<br/>
+> &emsp;`Array`<br/>
+> &emsp;`(`<br/>
+> &emsp;&emsp;    `[0] => Array`<br/>
+> &emsp;&emsp;        `(`<br/>
+> &emsp;&emsp;&emsp;            `[0] => good`<br/>
+> &emsp;&emsp;&emsp;            `[1] => better`<br/>
+> &emsp;&emsp;&emsp;           `[2] => best`<br/>
+> &emsp;&emsp;        `)`<br/>
+> &emsp;&emsp;    `[1] => Array`<br/>
+> &emsp;&emsp;       `(`<br/>
+> &emsp;&emsp;&emsp;            `[0] => bad`<br/>
+> &emsp;&emsp;&emsp;            `[1] => worse`<br/>
+> &emsp;&emsp;&emsp;            `[2] => worst`<br/>
+> &emsp;&emsp;        `)`<br/>
+> &emsp;&emsp;    `[2] => Array`<br/>
+> &emsp;&emsp;        `(`<br/>
+> &emsp;&emsp;&emsp;            `[0] => tall`<br/>
+> &emsp;&emsp;&emsp;            `[1] => taller`<br/>
+> &emsp;&emsp;&emsp;            `[2] => tallest`<br/>
+> &emsp;&emsp;        `)`<br/>
+> &emsp;`)`<br/><br/>
