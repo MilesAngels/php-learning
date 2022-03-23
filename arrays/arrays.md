@@ -250,7 +250,7 @@
 `?>`<br/><br/> 
 
 ## By Key
-- We can sort associative arrays by key. We will need to use ksort() to do so and this will sort the array in ascending order.
+- We can sort associative arrays by key. We will need to use `ksort()` to do so and this will sort the array in ascending order.
 - The associated values are preserved during this sort.
     - Example: <br/>
 `<?php`<br/>
@@ -258,3 +258,12 @@
 &emsp;`ksort($fruits); //applying the sort function`<br/>
 &emsp;`print_r($fruits); //printing the sorted array`<br/>
 `?>`<br/><br/>
+
+- We can sort associative arrays by key in descending order by using the krsort() which is a buil-in funtion.
+- The associated values are preserved during this sort.
+    - Example: <br/>
+`<?php`<br/> 
+&emsp;`$fruits = ['d'=>'Rasberry','b'=>'Orange','a'=> 'Apricot','e'=>'Banana', 'f'=>'Apple','c'=>'Olive' ]; //defining and array`<br/>
+&emsp;`krsort($fruits); //applying the sort function`<br/>
+&emsp;`print_r($fruits); //printing the sorted array`<br/>
+`?>`<br/><br/> 
