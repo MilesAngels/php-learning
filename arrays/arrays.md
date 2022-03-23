@@ -259,7 +259,7 @@
 &emsp;`print_r($fruits); //printing the sorted array`<br/>
 `?>`<br/><br/>
 
-- We can sort associative arrays by key in descending order by using the krsort() which is a buil-in funtion.
+- We can sort associative arrays by key in descending order by using the `krsort()` which is a buil-in funtion.
 - The associated values are preserved during this sort.
     - Example: <br/>
 `<?php`<br/> 
@@ -267,3 +267,33 @@
 &emsp;`krsort($fruits); //applying the sort function`<br/>
 &emsp;`print_r($fruits); //printing the sorted array`<br/>
 `?>`<br/><br/> 
+
+# Merging Arrays
+## The array_merge() function
+- The easiest way to merge 2 or more arrays is to use the built-in function `array_merge()`.
+- It can take as many input parameters as you'd want and it will return the merged array.
+
+### Indexed Array
+- For indexed arrays, `array_merge()` will merge multiple arrays without overwriting the value of one of the arrays but will append them instead. 
+- All the new appended elements will be renumbered.
+    - Example: <br/>
+`<?php`<br/>
+&emsp;`$a1 = array("red","green");`<br/>
+&emsp;`print_r($a1);`<br/>
+&emsp;`$a2 = array("blue","yellow");`<br/>
+&emsp;`print_r($a2);`<br/>
+&emsp;`$a3=array("black");`<br/>
+&emsp;`print_r($a3);`<br/>
+&emsp;`print_r(array_merge($a1,$a2,$a3));`<br/>
+`?>`<br/><br/>
+
+### Associative Array
+- For associative arrays, `array_merge()` will merge multiple arrays together.
+    - If the arrays have the same string keys then, the later value for that key will overwrite the previous one.
+    - Example: <br/>
+`<?php`<br/>
+&emsp;`$a1=array("a"=>"red","b"=>"green");`<br/>
+&emsp;`$a2=array("c"=>"blue","b"=>"yellow");`<br/>
+&emsp;`$a3=array("e"=>3);`<br/>
+&emsp;`print_r(array_merge($a1,$a2,$a3));`<br/><br/>
+`?>`<br/><br/>
