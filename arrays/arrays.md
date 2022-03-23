@@ -52,13 +52,13 @@
 `?>`<br/>
 
 > **Output**
-> Array
-> (
->    [0] => elephant
->    [1] => Array
->        (
->            [0] => honey
->            [1] => sad
->            [2] => 5
->        )
->)
+> `Array`<br/>
+> `(`<br/>
+>    `[0] => elephant`<br/>
+>    `[1] => Array`<br/>
+>        `(`<br/>
+>            `[0] => honey`<br/>
+>            `[1] => sad`<br/>
+>            `[2] => 5`<br/>
+>        `)`<br/>
+>`)`<br/>
