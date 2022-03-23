@@ -107,3 +107,17 @@
 > &emsp;&emsp;&emsp;            `[2] => tallest`<br/>
 > &emsp;&emsp;        `)`<br/>
 > &emsp;`)`<br/><br/>
+
+- An equivalent method of declaring the array above is the following:
+`<?php`<br/>
+&emsp;`$comparisonAdjectives[0][0] = "good";`<br/>
+&emsp;`$comparisonAdjectives[0][1] = "better";`<br/>
+&emsp;`$comparisonAdjectives[0][2] = "best";`<br/>
+&emsp;`$comparisonAdjectives[1][0] = "bad";`<br/>
+&emsp;`$comparisonAdjectives[1][1] = "worse";`<br/>
+&emsp;`$comparisonAdjectives[1][2] = "worst";`<br/>
+&emsp;`$comparisonAdjectives[2][0] = "tall";`<br/>
+&emsp;`$comparisonAdjectives[2][1] = "taller";`<br/>
+&emsp;`$comparisonAdjectives[2][2] = "tallest";`<br/>
+&emsp;`print_r($comparisonAdjectives);`<br/>
+`?>` <br/><br/>
