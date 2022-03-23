@@ -147,3 +147,5 @@
 &emsp;`);`<br/>
 &emsp;`echo "Currency of Germany is: " . $economy[0]["currency"]; // Access array at [0] index`<br/>
 `?>`<br/><br/>
+
+***Challenge 2***
