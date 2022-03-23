@@ -231,12 +231,20 @@
 
 ## Sorting Associative Arrays
 ### By Value
-- We can sort associative arrays by value using the built-in function asort(). This will sort the array in ascending order.
-- asort() sorts the a associative array on values.
+- We can sort associative arrays by value using the built-in function `asort()`. This will sort the array in *ascending order*.
+- `asort()` sorts the a associative array on values.
 - Keys with each value will be preserved.
     - Example:<br/>
 `<?php`<br/> 
 &emsp;`$fruits = [1=>'Rasberry',2=> 'Orange',3=> 'Apricot',4=>'Banana', 5=>'Apple',6=>'Olive' ]; //defining and array`<br/>
 &emsp;`asort($fruits); //applying the sort function`<br/>
 &emsp;`print_r($fruits); //printing the sorted array`<br/>
-`?>`  <br/>   
+`?>`  <br/><br/>   
+
+- We can sort associative arrays by value another way. We can use the built-in function `arsort()` to sort associative arrays in descending order.
+    - Example: <br/>
+`<?php`<br/> 
+&emsp;`$fruits = [1=>'Rasberry',2=> 'Orange',3=> 'Apricot',4=>'Banana', 5=>'Apple',6=>'Olive' ]; //defining and array`<br/>
+&emsp;`arsort($fruits); //applying the sort function`<br/>
+&emsp;`print_r($fruits); //printing the sorted array`<br/>
+`?>`<br/><br/> 
