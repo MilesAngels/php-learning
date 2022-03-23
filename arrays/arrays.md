@@ -125,4 +125,25 @@
 ## Accessing values in Multidimensional Arrays
 - We can access a particular value from a multidimensional array using keys of subsequent arrays.
 - using the example array `$comparisionAdjectives`, we can specify or access a specific value
-    - `echo $comparisonAdjective[1][2];` this will output `"worst"` since it is in the first array index and in the 2nd index within that array.
+    - `echo $comparisonAdjective[1][2];` this will output `"worst"` since it is in index 1 and in index 2 within that array.
+
+## Indexed Array of Associative Arrays
+- Indexed array containing associative arrays<br/>
+`<?php`<br/>
+&emsp;`// Define a multidimensional array`<br/>
+&emsp;`$economy = array(`<br/>
+&emsp;&emsp;    `array(`<br/>
+&emsp;&emsp;&emsp;        `"country" => "Germany",`<br/>
+&emsp;&emsp;&emsp;        `"currency" => "Euro",`<br/>
+&emsp;&emsp;    `),`<br/>
+&emsp;&emsp;    `array(`<br/>
+&emsp;&emsp;&emsp;        `"country" => "Switzerland",`<br/>
+&emsp;&emsp;&emsp;        `"currency" => "Swiss Franc",`<br/>
+&emsp;&emsp;    `),`<br/>
+&emsp;&emsp;    `array(`<br/>
+&emsp;&emsp;&emsp;        `"country" => "England",`<br/>
+&emsp;&emsp;&emsp;        `"currency" => "Pound",`<br/>
+&emsp;&emsp;   `)`<br/>
+&emsp;`);`<br/>
+&emsp;`echo "Currency of Germany is: " . $economy[0]["currency"]; // Access array at [0] index`<br/>
+`?>`<br/><br/>
