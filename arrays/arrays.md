@@ -196,7 +196,7 @@
 # Removing Elements from Arrays
 ## Removing Elements from Indexed Arrays
 - The PHP built-in function `unset()` is used to remove an element from an array.
-    - By specifying an array element as an input parameter for `unset()` will remove that element from an indexed array.
+    - By specifying an array element as an input parameter for `unset()` will remove that element from an indexed array and its key.
     - Example: <br/>
 `<?php`<br/>
 &emsp;`$fruit = array("bananas", "apples", "peaches");`<br/>
