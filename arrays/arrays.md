@@ -50,3 +50,15 @@
 &emsp;`$check=array("elephant", array("honey", "sad", 5));`<br/> 
 &emsp;`print_r($check);`<br/>
 `?>`<br/>
+
+> **Output**
+> Array
+> (
+>    [0] => elephant
+>    [1] => Array
+>        (
+>            [0] => honey
+>            [1] => sad
+>            [2] => 5
+>        )
+>)
