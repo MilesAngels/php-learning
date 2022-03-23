@@ -108,7 +108,7 @@
 > &emsp;&emsp;        `)`<br/>
 > &emsp;`)`<br/><br/>
 
-- An equivalent method of declaring the array above is the following:
+- An equivalent method of declaring the array above is the following:<br/>
 `<?php`<br/>
 &emsp;`$comparisonAdjectives[0][0] = "good";`<br/>
 &emsp;`$comparisonAdjectives[0][1] = "better";`<br/>
