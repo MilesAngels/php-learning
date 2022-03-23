@@ -121,3 +121,8 @@
 &emsp;`$comparisonAdjectives[2][2] = "tallest";`<br/>
 &emsp;`print_r($comparisonAdjectives);`<br/>
 `?>` <br/><br/>
+
+## Accessing values in Multidimensional Arrays
+- We can access a particular value from a multidimensional array using keys of subsequent arrays.
+- using the example array `$comparisionAdjectives`, we can specify or access a specific value
+    - `echo $comparisonAdjective[1][2];` this will output `"worst"` since it is in the first array index and in the 2nd index within that array.
