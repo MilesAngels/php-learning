@@ -248,3 +248,13 @@
 &emsp;`arsort($fruits); //applying the sort function`<br/>
 &emsp;`print_r($fruits); //printing the sorted array`<br/>
 `?>`<br/><br/> 
+
+## By Key
+- We can sort associative arrays by key. We will need to use ksort() to do so and this will sort the array in ascending order.
+- The associated values are preserved during this sort.
+    - Example: <br/>
+`<?php`<br/>
+&emsp;`$fruits = ['f'=>'Rasberry','d'=>'Orange','a'=> 'Apricot','c'=>'Banana', 'b'=>'Apple','e'=>'Olive' ]; //defining and array`<br/>
+&emsp;`ksort($fruits); //applying the sort function`<br/>
+&emsp;`print_r($fruits); //printing the sorted array`<br/>
+`?>`<br/><br/>
