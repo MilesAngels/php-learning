@@ -203,3 +203,9 @@
 &emsp;`unset($fruit[1]);`<br/>
 &emsp;`print_r($fruit);`<br/>
 `?>` <br/><br/>   
+
+> `unset()` does not change the keys (indexes in this case) of the remaining elements.
+
+<br/>
+
+## Removing Elements from Associative Arrays
