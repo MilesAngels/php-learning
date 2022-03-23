@@ -154,4 +154,11 @@
 ## Adding Elements at the Start
 - You can add an element at the beginning of an array without modifying any of the current elements within the array by using `array_unshift()`
     - It prepends passed elements at the front of an array. 
-### Using array
+### Using array_unshift()
+- It has 2 or more parameters: first is the name of the array, the other parameters are the elements that need to be added to an array.
+    - Example: <br/>
+`<?php`
+&emsp;`$myArray = array(1, 2, 3);`<br/>
+&emsp;`array_unshift($myArray, 4,5);`<br/>
+&emsp;`print_r($myArray)`<br/>
+`?>`
