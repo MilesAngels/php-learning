@@ -209,3 +209,13 @@
 <br/>
 
 ## Removing Elements from Associative Arrays
+- We can remove an element in an associative array by specifying the element that we want to remove using `unset()`
+    - Example: <br/>
+`<?php`<br/>
+&emsp;`$fruit = array('first'=>'banana', 'second'=>'apple', 'third'=>'peaches');`<br/>
+&emsp;`unset($fruit['third']);`<br/>
+&emsp;`print_r($fruit);`<br/>
+`?>`<br/><br/>
+
+# Sorting Arrays
+## Sorting Indexed Arrays
