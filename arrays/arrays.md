@@ -149,3 +149,9 @@
 `?>`<br/><br/>
 
 ***Challenge 2***
+
+# Adding Elements in an Array
+## Adding Elements at the Start
+- You can add an element at the beginning of an array without modifying any of the current elements within the array by using `array_unshift()`
+    - It prepends passed elements at the front of an array. 
+### Using array
