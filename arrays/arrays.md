@@ -157,7 +157,7 @@
 ### Using array_unshift()
 - It has 2 or more parameters: first is the name of the array, the other parameters are the elements that need to be added to an array.
     - Example: <br/>
-`<?php`
+`<?php`<br/>
 &emsp;`$myArray = array(1, 2, 3);`<br/>
 &emsp;`array_unshift($myArray, 4,5);`<br/>
 &emsp;`print_r($myArray)`<br/>
@@ -175,3 +175,12 @@
 &emsp;`array_push($array, 5, 6); // Pushing 5 and 6 at the end of $array`<br/>
 &emsp;`print_r($array); `<br/>
 `?>` <br/><br/>  
+
+# Adding and Replacing Values at Random Position in an Array
+- To add or replace values at any position in an array, access the array position and assign a value.
+    - 
+    > `$arrayName[key]=value;`<br/>
+    - If an old key is used to assign a new value, the old value will be replaced.
+    - If a new key is used to assign a value, a new key will be created in the array.
+<br/>
+
