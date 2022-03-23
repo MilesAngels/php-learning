@@ -178,7 +178,7 @@
 
 # Adding and Replacing Values at Random Position in an Array
 - To add or replace values at any position in an array, access the array position and assign a value.
-    - 
+
     > `$arrayName[key]=value;`<br/>
     - If an old key is used to assign a new value, the old value will be replaced.
     - If a new key is used to assign a value, a new key will be created in the array.
