@@ -140,3 +140,15 @@
 - It is automatically called at the time when the object of the class is declared.
 > **Note**: A constructor is a member function that is usually `public`.
 > It **cannot** return a value.
+
+## Constructor Declaration
+- Classes can define a special __construct() method, which is executed as part of object creation. 
+    - Example: <br/>
+`<?php`<br/>
+&emsp;`class Shape {`<br/>
+&emsp;&emsp;`public $sides = 0;`<br/>
+&emsp;&emsp;`public $name = " "; `<br/> 
+&emsp;&emsp;`//initializes $name to $Name and $sides to $Sides`<br/>
+&emsp;&emsp;`public function __construct($Name, $Sides)` <br/>
+&emsp;`}`<br/>
+`?>`<br/><br/>
