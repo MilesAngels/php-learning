@@ -210,3 +210,14 @@
 &emsp;`$myShape = new Shape("hexagon", 6); //making an object and passing values to the constructor`<br/>
 &emsp;`$myShape->description(); // A shape with 6 sides`<br/>
 `?>`<br/><br/>
+
+# Methods and Property Visibility
+- Access modifiers provide access to the varibales of a class. 
+- There are three visibility types that you can apply to methods.
+    - Public
+    - Private
+    - Protected
+## Public
+- Declaring a method or property as public allows the method or property to be accessed by:
+    - The class that declared it
+    - 
