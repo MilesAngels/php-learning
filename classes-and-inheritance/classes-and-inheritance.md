@@ -56,7 +56,7 @@
 <br/>
 
 ## Accessing Class Member Variables
-- we can access class members by using the arrow function to call them outside of the class.
+- we can access class members by using the object operator (`->`) to call them outside of the class.
     - Example: <br/>
 `<?php`<br/>
 &emsp;`class Shape`<br/>
@@ -81,3 +81,22 @@
 &emsp;`$myShape1->name = "hexagon"; //setting the "name" property to hexagon`<br/>
 &emsp;`$myShape1->description(); //"A hexagon with 6 sides"`<br/>
 `?>`<br/><br/>
+
+# $this and self
+## $this
+- `$this` is a pseudo-variable that refers to a member of a class according to an instance of that class.
+- It provides a reference to the calling object, that is the object which the method or property belongs to.
+### The Object Operator
+- The `->` operator is abuilt-in construct that is used with the `$this` keyword to access contained methods and properties.
+
+## self
+- The `self` keyword refers to properties and method inside the scope of the class. 
+- It provides a reference to the calling object, that is the object which the method or property belongs to.
+### The Scope Resolution Operator
+- The `::` symbol, known as the scope resolution operator is a buil-in construct that is used to access methods and properties.
+<br/>
+
+> #### this versus self
+> - Use $this->member for accessing non-static members (methods and properties)
+> - Use self::$member for accessing static members (methods and properties)
+>       - note: static members are accessible without needing an instantiation of the class and can be accessed statically within an instantiated class object.
