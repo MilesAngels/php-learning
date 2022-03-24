@@ -136,12 +136,13 @@
 `?>`<br/><br/>
 
 # Constructors & Destructors
+## Constructors
 - A constructor is used to initialize member variables when an object is declared.
 - It is automatically called at the time when the object of the class is declared.
 > **Note**: A constructor is a member function that is usually `public`.
 > It **cannot** return a value.
 
-## Constructor Declaration
+### Constructor Declaration
 - Classes can define a special __construct() method, which is executed as part of object creation. 
     - Example: <br/>
 `<?php`<br/>
@@ -153,7 +154,7 @@
 &emsp;`}`<br/>
 `?>`<br/><br/>
 
-## Constructor Definition
+### Constructor Definition
 - Example: <br/>
 `<?php`<br/>
 &emsp;`class Shape`<br/>
@@ -173,3 +174,39 @@
 &emsp;`$myShape = new Shape("hexagon", 6); //making an object and passing values to the constructor`<br/>
 &emsp;`$myShape->description(); // A shape with 6 sides`<br/>
 `?>`<br/>
+
+### Calling a Constructor
+- It is called in object declaration
+- It creates a class object
+- It calls the constructor to initialize variables
+
+## Destructors
+- Destructors are the opposite of constructors, as they define the final behavior of an object and execute when the object is no longer in use.
+- an object's destructor, which takes not parameters is called sometime after an object is no longer referenced, but the complexitites of garbage collection make the specific timing of destructors uncertain.
+> destructors ar enot called but are invoked automatically
+
+<br/>
+
+- Example: <br/>
+`<?php`<br/>
+&emsp;`class Shape`<br/>
+&emsp;`{`<br/>
+&emsp;&emsp;`public $sides = 0;`<br/>
+&emsp;&emsp;`public $name = " ";`<br/>
+&emsp;&emsp;`public function __construct($name, $sides)`<br/>
+&emsp;&emsp;`{ //defining a constructor`<br/>
+&emsp;&emsp;&emsp;`$this->sides = $sides; //initializing $this->sides to $sides`<br/>
+&emsp;&emsp;&emsp;`$this->name = $name; //initializing $this->name to $name `<br/>
+&emsp;&emsp;`}`<br/>
+&emsp;&emsp;`public function __destruct()`<br/>
+&emsp;&emsp;`{ //destructor for Shape gets called at the end`<br/>
+&emsp;&emsp;&emsp;`echo "Destructor Called!\n";`<br/>
+&emsp;&emsp;`}`<br/>
+&emsp;&emsp;`public function description()`<br/>
+&emsp;&emsp;`{ //method to display name and sides of a shape`<br/>
+&emsp;&emsp;&emsp;`echo "A $this->name with $this->sides sides.\n";`<br/>
+&emsp;&emsp;`}`<br/>
+&emsp;`}`<br/>
+&emsp;`$myShape = new Shape("hexagon", 6); //making an object and passing values to the constructor`<br/>
+&emsp;`$myShape->description(); // A shape with 6 sides`<br/>
+`?>`<br/><br/>
