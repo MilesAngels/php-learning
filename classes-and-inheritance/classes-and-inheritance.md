@@ -100,3 +100,37 @@
 > - Use $this->member for accessing non-static members (methods and properties)
 > - Use self::$member for accessing static members (methods and properties)
 >       - note: static members are accessible without needing an instantiation of the class and can be accessed statically within an instantiated class object.
+<br/>
+
+- Example: <br/>
+`<?php`<br/>
+&emsp;`class Circle`<br/>
+&emsp;`{`<br/>
+&emsp;&emsp;`// properties`<br/>
+&emsp;&emsp;`public $radius= 0; //declaring public member`<br/>
+&emsp;&emsp;`public static $pi=3.14;  //declaring a public static member`<br/>
+&emsp;&emsp;`// Method to get the Circumference`<br/>
+&emsp;&emsp;`public function getCircumference(){`<br/>
+&emsp;&emsp;&emsp;`return (2 * self::$pi * $this->radius );`<br/>
+&emsp;&emsp;`}`<br/>
+&emsp;&emsp;`// Method to get the area`<br/>
+&emsp;&emsp;`public function getArea(){`<br/>
+&emsp;&emsp;`return ($this->radius * $this->radius*self::$pi);`<br/>
+&emsp;&emsp;`}`<br/>
+&emsp;&emsp;`// Method to get the diameter`<br/>
+&emsp;&emsp;`public function getDiameter(){`<br/>
+&emsp;&emsp;&emsp;`return ($this->radius * 2);`<br/>
+&emsp;&emsp;`}`<br/>
+&emsp;`}`<br/>
+&emsp;`// Create a new Circle class object`<br/>
+&emsp;`$obj = new Circle;`<br/>
+&emsp;`// Set object properties values`<br/>
+&emsp;`$obj->radius = 4;`<br/>
+&emsp;`// Read the object properties values again to show the change`<br/>
+&emsp;`echo "Radius is ". $obj->radius . "\n";` <br/>
+&emsp;`echo "Diamater is ". $obj->getDiameter() . "\n"; `<br/>
+&emsp;`// Call the object methods`<br/>
+&emsp;`echo "Circumference is ". $obj->getCircumference(),"\n";`<br/>
+&emsp;`echo "Area is " .$obj->getArea()."\n";` <br/>
+&emsp;`echo "Value of pi is " .$obj::$pi;`<br/>
+`?>`<br/><br/>
