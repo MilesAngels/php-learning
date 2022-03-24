@@ -220,4 +220,25 @@
 ## Public
 - Declaring a method or property as public allows the method or property to be accessed by:
     - The class that declared it
-    - 
+    - The classes that inherits from the declare class.
+    - Any external objects, classes, or code outside the class hierarchy. 
+- Example: <br/>
+`<?php`<br/>
+&emsp;`class Car`<br/>
+&emsp;`{`<br/>
+&emsp;&emsp;`public $name = " ";`<br/>
+&emsp;&emsp;`public function display()`<br/>
+&emsp;&emsp;`{`<br/>
+&emsp;&emsp;&emsp;`echo "Name: $this->name" . "\n";`<br/>
+&emsp;&emsp;`}`<br/>
+&emsp;&emsp;`public function __construct($name)`<br/>
+&emsp;&emsp;`{`<br/>
+&emsp;&emsp;&emsp;`$this->name = $name;`<br/>
+&emsp;&emsp;`}`<br/>
+&emsp;`}`<br/>
+&emsp;`$obj1 = new Car("BMW"); //creating an object of car and setting its name as BMW`<br/>
+&emsp;`echo "Name: " . $obj1->name; //accessing the "name" property of obj1 directly outside of class`<br/>
+&emsp;`echo "\n";`<br/>
+&emsp;`$obj2 = new Car("Mercedes"); //creating an object of car and setting its name as Mercedes`<br/>
+&emsp;`echo $obj2->display(); //accessing the "display" method of obj1 directly outside of class`<br/>
+`?>`<br/><br/>
