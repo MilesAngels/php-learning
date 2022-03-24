@@ -20,3 +20,25 @@
 - Refer to functions inside the class or object
 
 ## The what and the why?
+- We use classes and objects to make our code efficient and group similar tasks to make the code less repetitive.
+- A class is used to define the actions and data structure is used to build objects.
+
+# Defining Classes
+## Syntax for Defining Classes
+- To define a class, we need to use the keyword `class` followed by the name you want to give to your new class.
+    - Syntax:<br/>
+> `class className {`<br/>
+> `//properties and methods`<br/>
+> `}`<br/>
+<br/>
+
+- Example: <br/>
+`<?php`<br/>
+&emsp;`class Shape{`<br/>
+&emsp;&emsp;`public $sides = 0; // first property`<br/>
+&emsp;&emsp;`public $name= " "; // second property`<br/> 
+&emsp;&emsp;`public function description(){ //first method`<br/>
+&emsp;&emsp;&emsp;`echo "A $this->name with $this->sides sides.";`<br/>
+&emsp;&emsp;`}`<br/>
+&emsp;`}`<br/>
+`?>`<br/><br/>
