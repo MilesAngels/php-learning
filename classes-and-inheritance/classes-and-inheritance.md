@@ -134,3 +134,9 @@
 &emsp;`echo "Area is " .$obj->getArea()."\n";` <br/>
 &emsp;`echo "Value of pi is " .$obj::$pi;`<br/>
 `?>`<br/><br/>
+
+# Constructors & Destructors
+- A constructor is used to initialize member variables when an object is declared.
+- It is automatically called at the time when the object of the class is declared.
+> **Note**: A constructor is a member function that is usually `public`.
+> It **cannot** return a value.
