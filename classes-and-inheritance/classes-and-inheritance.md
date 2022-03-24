@@ -218,7 +218,7 @@
     - Private
     - Protected
 ## Public
-- Declaring a method or property as public allows the method or property to be accessed by:
+- Declaring a method or property as `public` allows the method or property to be accessed by:
     - The class that declared it
     - The classes that inherits from the declare class.
     - Any external objects, classes, or code outside the class hierarchy. 
@@ -241,4 +241,45 @@
 &emsp;`echo "\n";`<br/>
 &emsp;`$obj2 = new Car("Mercedes"); //creating an object of car and setting its name as Mercedes`<br/>
 &emsp;`echo $obj2->display(); //accessing the "display" method of obj1 directly outside of class`<br/>
+`?>`<br/><br/>
+
+## Private
+- Declaring a method or property as private allows the method or property to be accessed by:
+    - Only the class that declares it
+- Only visible and accessible within the class that created it.
+- Example: <br/>
+`<?php`<br/>
+&emsp;`class Car`<br/>
+&emsp;`{`<br/>
+&emsp;&emsp;`public $name = " ";`<br/>
+&emsp;&emsp;`private $plateNumber;`<br/>
+&emsp;&emsp;`public function display()`<br/>
+&emsp;&emsp;`{`<br/>
+&emsp;&emsp;&emsp;`echo "Name: $this->name" . "\n";`<br/>
+&emsp;&emsp;`}`<br/>
+&emsp;&emsp;`public function setPlateNumber($number)`<br/>
+&emsp;&emsp;`{ //sets value of property plateNumber`<br/>
+&emsp;&emsp;&emsp;`$this->plateNumber = $number;`<br/>
+&emsp;&emsp;`}`<br/>
+&emsp;&emsp;`public function getPlateNumber()`<br/>
+&emsp;&emsp;`{ //returns the property "plateNumber"`<br/>
+&emsp;&emsp;&emsp;`return $this->plateNumber;`<br/>
+&emsp;&emsp;`}`<br/>
+&emsp;&emsp;`public function __construct($name, $number)`<br/>
+&emsp;&emsp;`{`<br/>
+&emsp;&emsp;&emsp;`$this->name = $name;`<br/>
+&emsp;&emsp;&emsp;`$this->plateNumber = $number;`<br/>
+&emsp;&emsp;`}`<br/>
+&emsp;`}`<br/>
+&emsp;`$obj1 = new Car("BMW", 68775); //making a car object with values of name and platenumber set`<br/>
+&emsp;`echo $obj1->display(); //displaying name of car`<br/>
+&emsp;`echo "Plate number: " . $obj1->getPlateNumber(); //accessing plateNumber by calling getPlateNumber method`<br/>
+&emsp;`echo "\n";`<br/>
+&emsp;`$obj1->setPlateNumber(47798); //changing PlateNumber value using setPlateNumber`<br/>
+&emsp;`echo "Plate number: " . $obj1->getPlateNumber(); //accessing plateNumber by calling getPlateNumber method`<br/>
+&emsp;`echo "\n";`<br/>
+&emsp;`$obj2 = new Car("Mercedes", 89976);`<br/>
+&emsp;`//uncomment the line below and try running the code`<br/>
+&emsp;`//you will get an error as you cannot directly access a private member outside of the class it is declared in`<br/>
+&emsp;`//echo $obj2->plateNumber;`<br/>
 `?>`<br/><br/>
