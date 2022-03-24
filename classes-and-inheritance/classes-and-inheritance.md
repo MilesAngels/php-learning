@@ -152,3 +152,24 @@
 &emsp;&emsp;`public function __construct($Name, $Sides)` <br/>
 &emsp;`}`<br/>
 `?>`<br/><br/>
+
+## Constructor Definition
+- Example: <br/>
+`<?php`<br/>
+&emsp;`class Shape`<br/>
+&emsp;`{`<br/>
+&emsp;&emsp;`public $sides = 0;`<br/>
+&emsp;&emsp;`public $name = " ";`<br/>
+&emsp;&emsp;`public function __construct($name, $sides)`<br/>
+&emsp;&emsp;`{ //defining a constructor`<br/>
+&emsp;&emsp;&emsp;`$this->sides = $sides; //initializing $this->sides to $sides`<br/>
+&emsp;&emsp;&emsp;`$this->name = $name; //initializing $this->name to $name` <br/>
+&emsp;&emsp;`}`<br/>
+&emsp;&emsp;`public function description()`<br/>
+&emsp;&emsp;`{ //method to display name and sides of a shape`<br/>
+&emsp;&emsp;&emsp;`echo "A $this->name with $this->sides sides.";`<br/>
+&emsp;&emsp;`}`<br/>
+&emsp;`}`<br/>
+&emsp;`$myShape = new Shape("hexagon", 6); //making an object and passing values to the constructor`<br/>
+&emsp;`$myShape->description(); // A shape with 6 sides`<br/>
+`?>`<br/>
