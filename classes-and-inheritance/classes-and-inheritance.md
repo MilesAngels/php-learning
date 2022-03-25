@@ -283,3 +283,12 @@
 &emsp;`//you will get an error as you cannot directly access a private member outside of the class it is declared in`<br/>
 &emsp;`//echo $obj2->plateNumber;`<br/>
 `?>`<br/><br/>
+
+> By using the get and set functions we were able to access the values of the private members.
+
+<br/>
+
+## Protected
+- By Declaring a method or a property as protected allows the method or property to be accessed by:
+    - the class that declared it
+    - the classes that inherits from the declared class
