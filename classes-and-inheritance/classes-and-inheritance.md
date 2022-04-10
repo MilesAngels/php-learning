@@ -320,7 +320,7 @@
 |Private|✔|❌|❌|
 |Protected|✔|✔|❌|
 |Public|✔|✔|✔|
-> objexts of the same class will have access to each other's `private` and `protected` members even though they are not the same instances.
+> objects of the same class will have access to each other's `private` and `protected` members even though they are not the same instances.
 - Example: <br>
 `<?php` <br>
 &emsp;`class Test`<br>
@@ -343,4 +343,21 @@
 &emsp;`//call $test2 method on another instance of the Test class - $test1`<br>
 &emsp;`$test2->increase($test1);`<br>
 &emsp;`echo "after test1: $test1\n";`<br>
-`?>`
+`?>`<br><br>
+
+# Inheritance
+## What is Inheritance?
+- Allows programmers to create and define classes that can inherit and build upon functionalities already present in existing classes without a duplicate a lot of code.
+    - Create a new class from an existing class
+    - The new class is a specialized version of the existing class
+    - Allows new class to override or redefine inherited methods from the existing class to perform differently than how they are defined in the existing class.
+
+### Terminology
+- Base Class (or parent): inherited by child class
+- Derived Class (or child): inherits from base class
+### Characteristics
+- A derived class has:
+    - All members defined in the derived class
+    - All members declared in the bas class
+
+- 
