@@ -320,3 +320,27 @@
 |Private|✔|❌|❌|
 |Protected|✔|✔|❌|
 |Public|✔|✔|✔|
+> objexts of the same class will have access to each other's `private` and `protected` members even though they are not the same instances.
+- Example: <br>
+`<?php` <br>
+&emsp;`class Test`<br>
+&emsp;`{`<br>
+&emsp;&emsp;`private $privateM=1;`<br>
+&emsp;&emsp;`protected $protectedM=2;`<br>
+&emsp;&emsp;`public function increase(Test $test)`<br>
+&emsp;&emsp;`{`<br>
+&emsp;&emsp;`$test-> privateM *= 10;`<br>
+&emsp;&emsp;`$test-> protectedM *= 10;`<br>
+&emsp;&emsp;`}`<br>
+&emsp;&emsp;`public function __toString()`<br>
+&emsp;&emsp;`{`<br>
+&emsp;&emsp;&emsp;`return "privateMember = ".$this->privateM.",` `protectedMember = ".$this->protectedM;`<br>
+&emsp;&emsp;`}`<br>
+&emsp;`}`<br>
+&emsp;`$test1 = new Test();`<br>
+&emsp;`$test2 = new Test();`<br>
+&emsp;`echo "before test1: $test1\n";`<br>
+&emsp;`//call $test2 method on another instance of the Test class - $test1`<br>
+&emsp;`$test2->increase($test1);`<br>
+&emsp;`echo "after test1: $test1\n";`<br>
+`?>`
