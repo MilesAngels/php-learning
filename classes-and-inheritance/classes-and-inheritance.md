@@ -292,3 +292,28 @@
 - By Declaring a method or a property as protected allows the method or property to be accessed by:
     - the class that declared it
     - the classes that inherits from the declared class
+> Note: This does not allow external objects, classes, or code outside the class hiearachy to access these methods and properties.
+
+- Example: <br>
+`<?php`<br>
+&emsp;`class Car`<br>
+&emsp;`{`<br>
+&emsp;&emsp;    `public $name = " ";`<br>
+&emsp;&emsp;    `protected $power = 2500;`<br>
+&emsp;&emsp;    `public function display()`<br>
+&emsp;&emsp;    `{`<br>
+&emsp;&emsp;&emsp;        `echo "Name: $this->name" . "\n";`<br>
+&emsp;&emsp;    `}`<br>
+&emsp;&emsp;    `public function __construct($name)`<br>
+&emsp;&emsp;    `{`<br>
+&emsp;&emsp;&emsp;       `$this->name = $name;`<br>
+&emsp;&emsp;    `}`<br>
+&emsp;`}`<br>
+&emsp;`//Code`<br>
+&emsp;`$obj = new Car("Blue");`<br>
+&emsp;`echo $obj->display();`<br>
+&emsp;`echo $obj->power; //comment out this line to prevent an error`<br>
+`?>`<br><br>
+
+|Modifier|Class|Subclass|World|
+|--------|-----|--------|-----|
