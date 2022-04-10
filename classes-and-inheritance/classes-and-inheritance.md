@@ -318,3 +318,5 @@
 |Modifier|Class|Subclass|World|
 |--------|-----|--------|-----|
 |Private|✔|❌|❌|
+|Protected|✔|✔|❌|
+|Public|✔|✔|✔|
