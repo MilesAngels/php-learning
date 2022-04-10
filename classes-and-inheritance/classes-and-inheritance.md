@@ -360,4 +360,61 @@
     - All members defined in the derived class
     - All members declared in the bas class
 
-- 
+- A derived class can:
+    - Use all public and protected members defined in the derived class
+    - Use all public and protected members in the defined base class
+    - Override an inherited member
+
+- A derived class cannot:
+    - Inherit constructors and destructors
+
+### Notation
+- Classes can inherit the properties and methods of another class using the keyword extends.<br>
+
+`class Shape { //base class`<br>
+ &emsp;`//body`<br>
+`}`<br>
+`//derived class inherits from another class by using the keyword extends `<br>
+`class Square extends Shape {  `<br>
+&emsp;      `//body`<br>
+`}`<br><br>
+
+- Example: <br>
+`<?php`<br>
+&emsp;`class Shape`<br>
+&emsp;`{ //base class`<br>
+    &emsp;&emsp;`public $sides = 0;`<br>
+    &emsp;&emsp;`public $name = " ";`<br>
+    &emsp;&emsp;`public function __construct($name, $sides)`<br>
+    &emsp;&emsp;`{ //base class constructor`<br>
+        &emsp;&emsp;&emsp;`$this->sides = $sides;`<br>
+        &emsp;&emsp;&emsp;`$this->name = $name;`<br>
+    &emsp;&emsp;`}`<br>
+    &emsp;&emsp;`public function description()`<br>
+    &emsp;&emsp;`{`<br>
+        &emsp;&emsp;&emsp;`return "A $this->name with $this->sides sides.";`<br>
+    &emsp;&emsp;`}`<br>
+&emsp;`}`<br>
+&emsp;`class Square extends Shape`<br>
+&emsp;`{ //derived class inheriting from base class`<br>
+    &emsp;&emsp;`public $sideLength = 0;`<br>
+    &emsp;&emsp;`public function __construct($sideLength)`<br>
+    &emsp;&emsp;`{`<br>
+        &emsp;&emsp;&emsp;`parent::__construct("square", 4); //calling parent class constructor`<br>
+        &emsp;&emsp;&emsp;`$this->sideLength = $sideLength;`<br>
+    &emsp;&emsp;`}`<br>
+    &emsp;&emsp;`public function perimeter()`<br>
+    &emsp;&emsp;`{`<br>
+        &emsp;&emsp;&emsp;`return $this->sides * $this->sideLength;`<br>
+    &emsp;&emsp;`}`<br>
+    &emsp;&emsp;`public function area()`<br>
+    &emsp;&emsp;`{`<br>
+        &emsp;&emsp;&emsp;`return $this->sideLength * $this->sideLength;`<br>
+    &emsp;&emsp;`}`<br>
+&emsp;`}`<br>
+&emsp;`$mySquare = new Square(10);`<br>
+&emsp;`$mySquare->description();`<br>
+&emsp;`echo "Perimeter of the square is " .$mySquare->perimeter() . "\n";`<br>
+&emsp;`echo "Area of the square is ";`<br>
+&emsp;`echo $mySquare->area();`<br>
+`?>`<br><br>
