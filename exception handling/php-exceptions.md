@@ -60,27 +60,27 @@
 <br>
 
 - php without catch
-`<?php`
-&emsp;`function division($a, $b){`
-&emsp;&emsp;`    if($b ==0){`
-&emsp;&emsp;&emsp;`        throw new Exception('Divisor is zero'); // Throw exception if divisor is zero`
-&emsp;&emsp;`    }`
-&emsp;&emsp;` else{`
-&emsp;&emsp;&emsp;`        $c = $a/$b;`
-&emsp;&emsp;&emsp;`        echo "$a / $b = $c";`
-&emsp;&emsp;`    }`
-&emsp;`}`
-` `
-&emsp;`try{`
-&emsp;&emsp;`    division(10, 2);`
-&emsp;&emsp;`    division(15, 0);`
-&emsp;&emsp;`    division(30, -4);`
-&emsp;&emsp;`   `
-&emsp;&emsp;`    `
-&emsp;&emsp;`    echo 'All calculations done!';// If an exception is thrown, this line will not execute`
-&emsp;`  }`
-` `
-`// write your catch statement here`
-`   `
-&emsp;`echo "\n"."Hello World!"; // Continue execution`
-`?>`
+`<?php`<br>
+&emsp;`function division($a, $b){`<br>
+&emsp;&emsp;`    if($b ==0){`<br>
+&emsp;&emsp;&emsp;`        throw new Exception('Divisor is zero'); // Throw exception if divisor is zero`<br>
+&emsp;&emsp;`    }`<br>
+&emsp;&emsp;` else{`<br>
+&emsp;&emsp;&emsp;`        $c = $a/$b;`<br>
+&emsp;&emsp;&emsp;`        echo "$a / $b = $c";`<br>
+&emsp;&emsp;`    }`<br>
+&emsp;`}`<br>
+` `<br>
+&emsp;`try{`<br>
+&emsp;&emsp;`    division(10, 2);`<br>
+&emsp;&emsp;`    division(15, 0);`<br>
+&emsp;&emsp;`    division(30, -4);`<br>
+&emsp;&emsp;`   `<br>
+&emsp;&emsp;`    `<br>
+&emsp;&emsp;`    echo 'All calculations done!';// If an exception is thrown, this line will not execute`<br>
+&emsp;`  }`<br>
+` `<br>
+`// write your catch statement here`<br>
+`   `<br>
+&emsp;`echo "\n"."Hello World!"; // Continue execution`<br>
+`?>`<br><br>
