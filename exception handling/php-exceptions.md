@@ -51,3 +51,38 @@
 &emsp;`echo "\n"."Hello World!"; // Continue execution`<br>
 `?>`<br><br>
 
+### Methods
+- PHP Exception class provides these methods
+    - getCode()
+    - getFile()
+    - getLine()
+    - getTraceAsString()
+<br>
+
+|php without catch|php with catch|
+|-----------------|--------------|
+|<?php
+function division($a, $b){
+    
+    if($b ==0){
+        throw new Exception('Divisor is zero'); // Throw exception if divisor is zero
+    } else{
+        
+        $c = $a/$b;
+        echo "$a / $b = $c";
+    }
+}
+ 
+try{
+    division(10, 2);
+    division(15, 0);
+    division(30, -4);
+   
+    
+    echo 'All calculations done!';// If an exception is thrown, this line will not execute
+  }
+
+// write your catch statement here
+
+echo "\n"."Hello World!"; // Continue execution
+?>||
