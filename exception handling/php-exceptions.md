@@ -62,8 +62,7 @@
 |php without catch|php with catch|
 |-----------------|--------------|
 |<?php
-function division($a, $b){
-    
+|function division($a, $b){
     if($b ==0){
         throw new Exception('Divisor is zero'); // Throw exception if divisor is zero
     } else{
