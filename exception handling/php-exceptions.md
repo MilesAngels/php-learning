@@ -117,3 +117,45 @@
 &emsp;`   `<br>
 &emsp;`echo "\n"."Hello World!"; // Continue execution`<br>
 `?>`
+
+## Custom Exceptions
+### Defining Custome Exceptions
+- The class must be an extension of the built-in exception class since it is the base class.
+- The custom class inherits all the objects, properties, and methods of the base class.<br>
+
+`<?php`<br>
+&emsp;`  class DecelerationException extends Exception{} //DecelerationException inherits Exception`<br>
+&emsp;`  class TimeException extends Exception{} //TimeException inherits Exception`<br>
+&emsp;`   `<br>
+&emsp;`function acceleration($finalSpeed,$initialSpeed,$time){`<br>
+&emsp;&emsp;`   `<br>
+&emsp;&emsp;`  if($time <= 0){`<br>
+&emsp;&emsp;`    throw new TimeException('Time cannot be negative or zero.'); // Throw exception if time is negative or zero`<br>
+&emsp;&emsp;`  } `<br>
+&emsp;&emsp;`  if($initialSpeed > $finalSpeed){`<br>
+&emsp;&emsp;`    throw new DecelerationException('It is deceleration.'); // Throw exception if initial speed is greater than final speed`<br>
+&emsp;&emsp;`  } `<br>
+&emsp;&emsp;`  else{`<br>
+&emsp;&emsp;&emsp;`    $a = ($finalSpeed-$initialSpeed)/$time;`<br>
+&emsp;&emsp;&emsp;`    echo "($finalSpeed-$initialSpeed)/$time = $a";`<br>
+&emsp;&emsp;`  }`<br>
+&emsp;`}`<br>
+&emsp;`try{`<br>
+&emsp;&emsp;`  acceleration(20,10, 2);`<br>
+&emsp;&emsp;`  acceleration(30,10, -4); //code will stop execution at this point and start finding the catch block`<br>
+&emsp;&emsp;`  acceleration(15,20, 5); //$initialSpeed>$finalSpeed`<br>
+&emsp;&emsp;`   `<br>
+&emsp;&emsp;`  echo 'All calculations done!';// If an exception is thrown, this line will not execute`<br>
+&emsp;`} `<br>
+&emsp;`   `<br>
+&emsp;`catch(DecelerationException $e){`<br>
+&emsp;`   `<br>
+&emsp;`  echo "\n". "Caught deceleration exception: " . $e->getMessage(); //Exception handling  `<br>
+&emsp;`}`<br>
+&emsp;`catch(TimeException $e){`<br>
+&emsp;`   `<br>
+&emsp;&emsp;`  echo "\n". "Caught time exception: " . $e->getMessage(); //Exception handling  `<br>
+&emsp;`}`<br>
+&emsp;`   `<br>
+&emsp;`echo "\n"."Hello World!"; // Continue execution`<br>
+`?>`<br><br>
