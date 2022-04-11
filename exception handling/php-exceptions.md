@@ -59,29 +59,28 @@
     - getTraceAsString()
 <br>
 
-|php without catch|php with catch|
-|-----------------|--------------|
-|<?php
-|function division($a, $b){
-    if($b ==0){
-        throw new Exception('Divisor is zero'); // Throw exception if divisor is zero
-    } else{
-        
-        $c = $a/$b;
-        echo "$a / $b = $c";
-    }
-}
- 
-try{
-    division(10, 2);
-    division(15, 0);
-    division(30, -4);
-   
-    
-    echo 'All calculations done!';// If an exception is thrown, this line will not execute
-  }
-
-// write your catch statement here
-
-echo "\n"."Hello World!"; // Continue execution
-?>||
+- php without catch
+`<?php`
+&emsp;`function division($a, $b){`
+&emsp;&emsp;`    if($b ==0){`
+&emsp;&emsp;&emsp;`        throw new Exception('Divisor is zero'); // Throw exception if divisor is zero`
+&emsp;&emsp;`    }`
+&emsp;&emsp;` else{`
+&emsp;&emsp;&emsp;`        $c = $a/$b;`
+&emsp;&emsp;&emsp;`        echo "$a / $b = $c";`
+&emsp;&emsp;`    }`
+&emsp;`}`
+` `
+&emsp;`try{`
+&emsp;&emsp;`    division(10, 2);`
+&emsp;&emsp;`    division(15, 0);`
+&emsp;&emsp;`    division(30, -4);`
+&emsp;&emsp;`   `
+&emsp;&emsp;`    `
+&emsp;&emsp;`    echo 'All calculations done!';// If an exception is thrown, this line will not execute`
+&emsp;`  }`
+` `
+`// write your catch statement here`
+`   `
+&emsp;`echo "\n"."Hello World!"; // Continue execution`
+`?>`
